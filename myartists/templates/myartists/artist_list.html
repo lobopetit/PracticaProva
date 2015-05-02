@@ -1,0 +1,20 @@
+{% extends "myrecommendations/base.html" %}
+
+{% block content %}
+
+<h1>
+    Artists
+    {% if user %}
+        (<a href="{% url 'myrecommendations:artist_create' %}">add</a>)
+    {% endif %}
+</h1>
+
+<ul>
+    {% for artist in latest_artist_list %}
+        <li><a href="{% url 'myrecommendations:artist_detail' artist.id %}">{{ artist.name }}</a></li>
+    {% empty %}
+        <li>Sorry, no artists registered yet.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
