@@ -6,12 +6,12 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
 
-from models import ArtistReview, Artist, Album, Song
-from forms import ArtistForm, AlbumForm, SongForm
+from models import ArtistReview, Artist, Album
+from forms import ArtistForm, AlbumForm
 
 class ArtistDetail(DetailView):
     model = Artist
-    template_name = 'myrecommendations/artist_detail.html'
+    template_name = 'myartists/artist_detail.html'
 
     def get_context_data(self, **kwargs):
         context = super(ArtistDetail, self).get_context_data(**kwargs)
@@ -20,7 +20,7 @@ class ArtistDetail(DetailView):
 
 class ArtistCreate(CreateView):
     model = Artist
-    template_name = 'myrecommendations/form.html'
+    template_name = 'myartists/form.html'
     form_class = ArtistForm
 
     def form_valid(self, form):
@@ -29,23 +29,13 @@ class ArtistCreate(CreateView):
 
 class AlbumCreate(CreateView):
     model = Album
-    template_name = 'myrecommendations/form.html'
+    template_name = 'myartists/form.html'
     form_class = AlbumForm
 
     def form_valid(self, form):
         form.instance.user = self.request.user
         form.instance.artist = Artist.objects.get(id=self.kwargs['pk'])
         return super(AlbumCreate, self).form_valid(form)
-
-class SongCreate(CreateView):
-    model = Song
-    template_name = 'myrecommendations/form.html'
-    form_class = SongForm
-
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        form.instance.artist = Artist.objects.get(id=self.kwargs['pk'])
-        return super(SongCreate, self).form_valid(form)
 
 def review(request, pk):
     artist = get_object_or_404(Artist, pk=pk)
@@ -55,4 +45,4 @@ def review(request, pk):
         user=request.user,
         artist=artist)
     new_review.save()
-    return HttpResponseRedirect(urlresolvers.reverse('myrecommendations:artist_detail', args=(artist.id,)))
+    return HttpResponseRedirect(urlresolvers.reverse('myartists:artist_detail', args=(artist.id,)))

@@ -8,7 +8,7 @@ class Artist(models.Model):
     name = models.TextField()
     city = models.TextField(default="")
     country = models.TextField(blank=True, null=True)
-    style = models.TextField(blank=True, null=True)
+    style = models.TextField(blank=False)
     web = models.URLField(blank=True, null=True)
     user = models.ForeignKey(User, default=1)
     date = models.DateField(default=date.today)
@@ -16,14 +16,14 @@ class Artist(models.Model):
     def __unicode__(self):
         return u"%s" % self.name
     def get_absolute_url(self):
-        return reverse('myrecommendations:artist_detail', kwargs={'pk': self.pk})
+        return reverse('myartists:artist_detail', kwargs={'pk': self.pk})
 
 
 class Album(models.Model):
     name = models.TextField()
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField('Euro amount', max_digits=8, decimal_places=2, blank=True, null=True)
-    image = models.ImageField(upload_to="myrecommendations", blank=True, null=True)
+    image = models.ImageField(upload_to="myartists", blank=True, null=True)
     user = models.ForeignKey(User, default=1)
     date = models.DateField(default=date.today)
     artist = models.ForeignKey(Artist, null=True, related_name='albums')
@@ -31,21 +31,7 @@ class Album(models.Model):
     def __unicode__(self):
         return u"%s" % self.name
     def get_absolute_url(self):
-        return reverse('myrecommendations:album_detail', kwargs={'pkr': self.artist.pk, 'pk': self.pk})
-
-class Song(models.Model):
-    name = models.TextField()
-    description = models.TextField(blank=True, null=True)
-    price = models.DecimalField('Euro amount', max_digits=8, decimal_places=2, blank=True, null=True)
-    duration = models.TextField(blank=True, null=True)
-    user = models.ForeignKey(User, default=1)
-    date = models.DateField(default=date.today)
-    artist = models.ForeignKey(Artist, null=True, related_name='songs')
-
-    def __unicode__(self):
-        return u"%s" % self.name
-    def get_absolute_url(self):
-        return reverse('myrecommendations:song_detail', kwargs={'pkr': self.artist.pk, 'pk': self.pk})
+        return reverse('myartists:album_detail', kwargs={'pkr': self.artist.pk, 'pk': self.pk})
 
 class Review(models.Model):
     RATING_CHOICES = ((1,'1'),(2,'2'),(3,'3'),(4,'4'),(5,'5'))

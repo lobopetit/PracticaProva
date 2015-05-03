@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from myrecommendations.models import Artist, Album
+from myartists.models import Artist, Album
 
 class ArtistForm(ModelForm):
     class Meta:
@@ -7,11 +7,6 @@ class ArtistForm(ModelForm):
         exclude = ('user', 'date',)
 
 class AlbumForm(ModelForm):
-    class Meta:
-        model = Album
-        exclude = ('Artist', 'user', 'date',)
-
-class SongForm(ModelForm):
     class Meta:
         model = Album
         exclude = ('Artist', 'user', 'date',)
