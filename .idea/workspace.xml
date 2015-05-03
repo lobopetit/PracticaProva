@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660fbd3b-3fed-40b6-a72b-e5398a7b1675" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/templates/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myrecommendations/wsgi.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myartists/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myartists/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myartists/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myartists/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrecommendations/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrecommendations/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrecommendations/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrecommendations/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrecommendations/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myrecommendations/__init__.py" afterPath="$PROJECT_DIR$/myrecommendations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myrecommendations/urls.py" afterPath="$PROJECT_DIR$/myrecommendations/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myartists/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/admin.py" afterPath="$PROJECT_DIR$/myartists/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/forms.py" afterPath="$PROJECT_DIR$/myartists/forms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/models.py" afterPath="$PROJECT_DIR$/myartists/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/tests.py" afterPath="$PROJECT_DIR$/myartists/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/urls.py" afterPath="$PROJECT_DIR$/myartists/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myartists/templates/views.py" afterPath="$PROJECT_DIR$/myartists/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PracticaProva.iws" />
@@ -89,7 +79,7 @@
         </entry>
       </file>
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myartists/templates/tests.py">
+        <entry file="file://$PROJECT_DIR$/myartists/tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,22 +89,20 @@
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myartists/templates/urls.py">
+        <entry file="file://$PROJECT_DIR$/myartists/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="975">
-              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="990">
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myartists/templates/views.py">
+        <entry file="file://$PROJECT_DIR$/myartists/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8560794" vertical-offset="0" max-vertical-offset="795">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.2605459" vertical-offset="45" max-vertical-offset="810">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#27#63#0" expanded="true" />
               </folding>
@@ -142,6 +130,7 @@
         <option value="$PROJECT_DIR$/myartists/templates/a.py" />
         <option value="$PROJECT_DIR$/myartists/templates/urls.py" />
         <option value="$PROJECT_DIR$/myartists/templates/views.py" />
+        <option value="$PROJECT_DIR$/myartists/views.py" />
       </list>
     </option>
   </component>
@@ -181,28 +170,14 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
+              <option name="myItemId" value="myrecommendations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="myrecommendations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myrecommendations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="myrecommendations" />
@@ -211,7 +186,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
+              <option name="myItemId" value="myrecommendations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -225,7 +200,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
+              <option name="myItemId" value="myrecommendations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -237,39 +212,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PracticaProva" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myrecommendations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myartists" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documentos/myrecommendations" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
@@ -284,6 +247,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PracticaProva" />
+      <recent name="$PROJECT_DIR$/myartists" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/myartists" />
     </key>
   </component>
@@ -546,7 +512,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430639823666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix errors">
+      <created>1430639834166</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1430639834166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -724,22 +696,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/admin.py">
+    <entry file="file://$PROJECT_DIR$/myartists/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/forms.py">
+    <entry file="file://$PROJECT_DIR$/myartists/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
@@ -749,7 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/models.py">
+    <entry file="file://$PROJECT_DIR$/myartists/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="317" max-vertical-offset="780">
           <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
@@ -759,7 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/tests.py">
+    <entry file="file://$PROJECT_DIR$/myartists/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -767,20 +737,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/urls.py">
+    <entry file="file://$PROJECT_DIR$/myartists/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="975">
-          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="990">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myartists/templates/views.py">
+    <entry file="file://$PROJECT_DIR$/myartists/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8560794" vertical-offset="0" max-vertical-offset="795">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.2605459" vertical-offset="45" max-vertical-offset="810">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#27#63#0" expanded="true" />
           </folding>

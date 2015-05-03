@@ -6,8 +6,9 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
 
-from models import ArtistReview, Artist, Album
+from myartists.models import ArtistReview, Artist, Album
 from forms import ArtistForm, AlbumForm
+
 
 class ArtistDetail(DetailView):
     model = Artist

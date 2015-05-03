@@ -4,7 +4,8 @@ from django.views.generic import DetailView, ListView, UpdateView
 
 from models import Artist, Album
 from forms import ArtistForm, AlbumForm
-from views import ArtistCreate, AlbumCreate, ArtistDetail
+from myartists.views import ArtistCreate, AlbumCreate, ArtistDetail
+
 
 urlpatterns = patterns('',
     # List latest 5 artists: /myartists/
